@@ -9,8 +9,8 @@ voted, and **reversibly** (`regraft` heals a mistaken cut; the pruned branch's h
 deleted — 非終末論).
 
 - Charter + invariants: [`CLAUDE.md`](./CLAUDE.md)
-- Pruning engine: [`methods/prune.py`](./methods/prune.py) · 15 tests (`./run_tests.sh`)
+- Pruning engine: [`src/sentei/methods/prune.cljc`](./src/sentei/methods/prune.cljc) · standalone suite: `bb --classpath src:test run_tests.clj`
 - Vocab: [`data/pruning-ontology.kotoba.edn`](./data/pruning-ontology.kotoba.edn) ·
-  [`lex/com.etzhayyim.sentei.prune.json`](./lex/com.etzhayyim.sentei.prune.json)
+  [`lex/com.etzhayyim.sentei.prune.edn`](./lex/com.etzhayyim.sentei.prune.edn)
 
 DID `did:web:etzhayyim.com:actor:sentei`.

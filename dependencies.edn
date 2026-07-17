@@ -1,0 +1,9 @@
+{:dependencies
+ [{:dependency/id etzhayyim/root
+   :dependency/repository "https://github.com/etzhayyim/root"
+   :dependency/revision "c1398abc9d53b4032a44f46ccc136ca134819f7e"
+   :dependency/paths ["90-docs/adr"]}
+  {:dependency/id org.kotoba-lang/kototama
+   :dependency/revision "65899deed4fb9cfa3cdfed9d21130c91982d8cd3"
+   :dependency/west-path "orgs/kotoba-lang/kototama"
+   :dependency/paths ["lib/actor/publish.bb"]}]}

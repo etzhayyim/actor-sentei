@@ -1,0 +1,5 @@
+{:identity/id "did:web:sentei.etzhayyim.com"
+ :identity/actor "sentei"
+ :identity/canonical-document "manifest.edn"
+ :identity/external-did-document ".well-known/did.json"
+ :identity/canonical-format :edn}

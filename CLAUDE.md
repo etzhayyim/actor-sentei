@@ -1,6 +1,6 @@
 # 剪定 sentei — Council as Pruner (post-hoc pruning governance)
 
-**ADR**: [2606072000](../../90-docs/adr/2606072000-sentei-council-as-pruner-post-hoc-governance.md) · **Tier-B** · **R0** · DID `did:web:etzhayyim.com:actor:sentei`
+**ADR**: `etzhayyim/root:90-docs/adr/2606072000-sentei-council-as-pruner-post-hoc-governance.md` · **Tier-B** · **R0** · DID `did:web:etzhayyim.com:actor:sentei`
 
 ## Identity
 
@@ -48,7 +48,7 @@ datom) · `rollback` (as-of restore the live head) · `revoke` (withdraw an atte
 - `methods/prune.py` — the pure pruning engine (the 4 actions + `regraft`; G1 manifested-only guard;
   G2 append-only `apply_log` fold + `as-of`; G4 Council floor + contested vote; G5 no-server-key;
   G7 verdict-token scan). **15 tests green** (`methods/test_prune.py`).
-- `data/pruning-ontology.kotoba.edn` + `lex/com.etzhayyim.sentei.prune.json` — invariants in 2 more
+- `data/pruning-ontology.kotoba.edn` + `lex/com.etzhayyim.sentei.prune.edn` — invariants in 2 more
   places (schema enum/`db/allowed` + lexicon const/enum).
 - Registered: INFRA_ACTORS + actor-profile seed → resolvable on `/search` + `/profile`.
 
