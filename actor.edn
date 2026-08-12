@@ -1,4 +1,4 @@
-{:did        "did:web:etzhayyim.github.io:com-etzhayyim-sentei"
+{:did        "did:web:etzhayyim.com:actor:sentei"
  :handle     "sentei.etzhayyim.com"
  :ipns-key   "sentei-actor"
  :graph-type "com.etzhayyim.sentei.graph"
