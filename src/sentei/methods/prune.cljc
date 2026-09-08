@@ -15,7 +15,7 @@
 
   Pure + deterministic (`at` is a parameter); event maps use string keys, mirroring
   the Python dicts. sha256 digest lives at the #?(:clj) edge."
-  (:require [clojure.string :as str]))
+  (:require [kotoba.lang.text :as str]))
 
 ;; D5 pruning vocabulary. delete / prior-restraint / halt-organism / verdict are ABSENT by design.
 (def PRUNE-ACTIONS #{"quarantine" "retract" "rollback" "revoke"})
@@ -39,7 +39,7 @@
 (defn assert-no-verdict
   "G7: a prune is grooming, not punishment — refuse any guilt/verdict token in its basis."
   [basis]
-  (let [low (str/lower-case (str basis))]
+  (let [low (str/lower (str basis))]
     (doseq [tok verdict-tokens]
       (when (str/includes? low tok)
         (throw (ex-info (str "G7 violation: verdict token '" tok "' in a prune basis (剪定 is care, not 制裁)")
