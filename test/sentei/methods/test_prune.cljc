@@ -1,7 +1,7 @@
 (ns sentei.methods.test-prune
   "sentei 剪定 structural-invariant tests. 1:1 port of `test_prune.py`."
   (:require [clojure.test :refer [deftest is]]
-            [clojure.string :as str]
+            [kotoba.lang.text :as str]
             [sentei.methods.prune :as prune]))
 
 (def AT "2026-06-07T20:00:00.000Z")
