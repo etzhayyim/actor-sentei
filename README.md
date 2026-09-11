@@ -16,7 +16,7 @@ a branch manifests; it cannot impose prior restraint, delete history, halt root
 growth, adjudicate guilt, or act without Council/member authority.
 
 - Charter + invariants: [`CLAUDE.md`](./CLAUDE.md)
-- Pruning engine: [`src/sentei/methods/prune.cljk`](./src/sentei/methods/prune.cljk) · standalone suite: `bb --classpath src:test run_tests.cljk`
+- Pruning engine: [`src/sentei/methods/prune.cljk`](./src/sentei/methods/prune.cljk) · standalone suite: `kbb --classpath src:test run_tests.cljk`
 - Vocab: [`data/pruning-ontology.kotoba.edn`](./data/pruning-ontology.kotoba.edn) ·
   [`lex/com.etzhayyim.sentei.prune.edn`](./lex/com.etzhayyim.sentei.prune.edn)
 
