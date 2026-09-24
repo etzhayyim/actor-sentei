@@ -1,5 +1,5 @@
 (ns sentei.repository-contract-test
-  (:require [clojure.edn :as edn]
+  (:require [kotoba.lang.edn :as edn]
             [kotoba.test :refer [deftest is]]
             [kotoba.io :as io]))
 
